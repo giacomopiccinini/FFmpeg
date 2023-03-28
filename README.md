@@ -2,6 +2,14 @@
 
 Since FFmpeg scripts are not that easy to read, I created this repo where I share those that I deem useful. 
 
+### Chop
+
+Chop a video from starting time to end time. 
+
+```
+./chop.sh <PATH_TO_VIDEO> <START_TIME> <END_TIME>
+```
+
 ### Length
 
 It computes the length of a video in seconds. As simple as that. 
