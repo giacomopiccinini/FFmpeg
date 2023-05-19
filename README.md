@@ -2,6 +2,15 @@
 
 Since FFmpeg scripts are not that easy to read, I created this repo where I share those that I deem useful. 
 
+### Concatenate Video
+
+Merging `Concatenate Audio` and `Waveform` (see below). It takes all the audio files in a directory, concatenates them, and then creates a video with the resulting waveform. 
+Also, it write down the timestamps in a json file. 
+
+```
+./ concat_video.sh <DIRECTORY_WITH_AUDIO_FILES> <OUTPUT_FILE> <JSON_FILE>
+```
+
 ### Concatenate Audio
 
 Take all the audio files in a directory (format accepted: mp3, wav, flac, aac) and concatenate them in a single file. Also, it create a json file where the timestamps
