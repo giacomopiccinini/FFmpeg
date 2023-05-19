@@ -2,6 +2,14 @@
 
 Since FFmpeg scripts are not that easy to read, I created this repo where I share those that I deem useful. 
 
+### Waveform
+
+Given an audio file, create a video with that audio and frames representing the corresponding waveform. 
+
+```
+./waveform.sh <PATH_TO_AUDIO> <OUTPUT_NAME>
+```
+
 ### Chop
 
 Chop a video from starting time to end time. 
