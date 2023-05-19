@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 video=$1
 start=$2

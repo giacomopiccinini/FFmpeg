@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # Path to video
 video=$1
