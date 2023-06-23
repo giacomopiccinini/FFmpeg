@@ -2,13 +2,22 @@
 
 Since FFmpeg scripts are not that easy to read, I created this repo where I share those that I deem useful. 
 
+### Convert to MP3
+
+To convert audio from .wav to .mp3 
+
+```
+./mp3.sh <WAVE_FILE>
+```
+The output is a file with the same name (but different extension) in mp3 format. 
+
 ### Concatenate Video
 
 Merging `Concatenate Audio` and `Waveform` (see below). It takes all the audio files in a directory, concatenates them, and then creates a video with the resulting waveform. 
 Also, it write down the timestamps in a json file. 
 
 ```
-./ concat_video.sh <DIRECTORY_WITH_AUDIO_FILES> <OUTPUT_FILE> <JSON_FILE>
+./concat_video.sh <DIRECTORY_WITH_AUDIO_FILES> <OUTPUT_FILE> <JSON_FILE>
 ```
 
 ### Concatenate Audio
@@ -17,7 +26,7 @@ Take all the audio files in a directory (format accepted: mp3, wav, flac, aac) a
 for each file in the concatenated file are reported. 
 
 ```
-./ concat_audio.sh <DIRECTORY_WITH_AUDIO_FILES> <OUTPUT_FILE> <JSON_FILE>
+./concat_audio.sh <DIRECTORY_WITH_AUDIO_FILES> <OUTPUT_FILE> <JSON_FILE>
 ```
 
 ### Waveform

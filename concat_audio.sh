@@ -50,7 +50,9 @@ sed -i '$ s/,$//' "$json_file"
 echo "}" >> "$json_file"
 
 # Concatenate all audio files
-ffmpeg -f concat -safe 0 -i "$file_list" -c copy "$output_file"
+ffmpeg -y -f concat -safe 0 -i "$file_list" -af aresample=44100 -ac 2 -c:a pcm_s16le "$output_file"
+
+#ffmpeg -f concat -safe 0 -i "$file_list" -c copy "$output_file"
 
 # Remove the temporary file
 rm "$file_list"
