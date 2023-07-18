@@ -43,6 +43,15 @@ Chop a video from starting time to end time.
 
 ```
 ./chop.sh <PATH_TO_VIDEO> <START_TIME> <END_TIME>
+
+```
+
+### Length report
+
+Apply the `length.sh` script recursively on all the audio files in a directory, and writes a summary with the result for each file. Note: the `length.sh` script needs to be installed in `/bin/length`. 
+
+```
+./length_report.sh <TARGET_DIRECTORY>
 ```
 
 ### Length
