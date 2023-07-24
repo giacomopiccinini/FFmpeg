@@ -2,6 +2,14 @@
 
 Since FFmpeg scripts are not that easy to read, I created this repo where I share those that I deem useful. 
 
+### Extract audio from video
+
+To extract the audio from a video in .mp3 format
+
+```
+./audio_from_video.sh <VIDEO>
+```
+
 ### Convert to MP3
 
 To convert audio from .wav to .mp3 
